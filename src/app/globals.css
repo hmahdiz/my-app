@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --carousel-padding: 3rem; 
+  --carousel-gap:.25rem;
+  --carousel-border-radius:1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +19,20 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body {  
+  background-color: #000;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+
+ul {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
 }

@@ -81,6 +81,7 @@ const products = [
 
 const Images = () => (
   <div>
+    <SwipingImage products={products} />
     <Carousel products={products} />
   </div>
 );

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+}
+
+.image{
+    flex: 0 0 100%;
+    aspect-ratio: 2/3;
+    transform: translate(-00%);
+    transition: transform .25s;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.carouselArrow{
+    width: var(--carousel-padding);
+    background-color: #453636a8;
+    margin: var(--carousel-gap) 0;
+    display: flex;
+    align-items: center;
+}

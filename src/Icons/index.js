@@ -1,3 +1,5 @@
 export {default as ChevronLeftSolid } from './ChevronLeftSolid'
 export {default as ChevronRightSolid} from './ChevronRightSolid'
 export {default as Ban} from './Ban'
+export {default as ArrowLeft} from './ArrowLeft'
+export {default as ArrowRight} from './ArrowRight'

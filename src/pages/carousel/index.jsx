@@ -1,4 +1,4 @@
-import { SwipingImage, Carousel } from "../../components";
+import { Carousel, SlickSlider } from "../../components";
 import "../../app/globals.css";
 
 const products = [
@@ -79,11 +79,9 @@ const products = [
   },
 ];
 
-const Images = () => (
-  <div>
-    <SwipingImage products={products} />
-    <Carousel products={products} />
-  </div>
+const CarouselView = () => (
+  <Carousel products={products} aspectRatio={2 / 3} imagePerSlide={5} />
+  // <SlickSlider products={products} heading="Beliebte Produkte" />
 );
 
-export default Images;
+export default CarouselView;
